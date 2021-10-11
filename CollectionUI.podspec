@@ -18,11 +18,12 @@ Pod::Spec.new do |spec|
      And there may take more easy
                    DESC
 
-  spec.homepage     = "https://github.com/MrDeveloperLiu/PirvateRepository.git"
+  spec.homepage     = "https://github.com/MrDeveloperLiu/PirvateRepository"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "刘杨" => "164182408@qq.com" }
   spec.platform     = :ios, "10.0"
   spec.swift_versions = ['5.0']
+  spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => "#{spec.version}" }
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -30,9 +31,14 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-  spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => "#{spec.version}" }
-  spec.source_files  = "CollectionUI/Classes/**/*"
-  spec.exclude_files = "CollectionUI/Classes/Exclude"
   spec.requires_arc = true
+  
+  if ENV['SOURCE']
+    spec.source_files  = "CollectionUI/Classes/**/*"
+    spec.exclude_files = "CollectionUI/Classes/Exclude"
+  elsif ENV['DEBUG']
+    spec.vendored_frameworks  = "CollectionUI/SDK/Debug/CollectionUI.framework"
+  else
+    spec.vendored_frameworks  = "CollectionUI/SDK/Release/CollectionUI.framework"
   
 end
