@@ -42,3 +42,5 @@ Pod::Spec.new do |spec|
     spec.vendored_frameworks  = "CollectionUI/SDK/Release/CollectionUI.framework"
   
 end
+
+# sth test
