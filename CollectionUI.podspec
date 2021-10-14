@@ -33,14 +33,8 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  if ENV['SOURCE']
-    spec.source_files  = "CollectionUI/Classes/**/*"
-    spec.exclude_files = "CollectionUI/Classes/Exclude"
-  elsif ENV['DEBUG']
-    spec.vendored_frameworks  = "CollectionUI/SDK/Debug/CollectionUI.framework"
-  else
-    spec.vendored_frameworks  = "CollectionUI/SDK/Release/CollectionUI.framework"
+  spec.source_files  = "CollectionUI/Classes/**/*"
+  spec.exclude_files = "CollectionUI/Classes/Exclude"
+  # spec.vendored_frameworks  =
   
 end
-
-# sth test
