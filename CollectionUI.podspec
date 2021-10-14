@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CollectionUI"
-  spec.version      = "1.0.6"
+  spec.version      = "1.1.1"
   spec.summary      = "CollectionUI: That is some useful wedigt for UITableView and UICollectionView"
   spec.description  = <<-DESC
     Hello There~
@@ -32,9 +32,9 @@ Pod::Spec.new do |spec|
   # spec.tvos.deployment_target = "9.0"
 
   spec.requires_arc = true
+  spec.source_files = "CollectionUI/Classes/**/*"
   
-  spec.source_files  = "CollectionUI/Classes/*"
-  spec.exclude_files = "CollectionUI/Classes/Exclude"
+  # spec.exclude_files = "CollectionUI/Classes/Exclude"
   # spec.vendored_frameworks  =
   
 end
