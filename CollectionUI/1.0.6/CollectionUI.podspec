@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  spec.source_files  = "CollectionUI/Classes/**/*"
+  spec.source_files  = "CollectionUI/Classes/*"
   spec.exclude_files = "CollectionUI/Classes/Exclude"
   # spec.vendored_frameworks  =
   
