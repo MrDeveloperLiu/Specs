@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.name         = "CollectionUI"
   spec.version      = "1.1.4"
   spec.summary      = "CollectionUI: That is some useful wedigt for UITableView and UICollectionView"
-
+  spec.description = 'CollectionUI Description.'
   spec.homepage     = "https://github.com/MrDeveloperLiu/PirvateRepository"
   spec.license      = "MIT"
   spec.author       = { "刘杨" => "164182408@qq.com" }
