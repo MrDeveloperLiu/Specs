@@ -23,8 +23,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "刘杨" => "164182408@qq.com" }
   spec.platform     = :ios, "10.0"
   spec.swift_versions = ['5.0']
-  #spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => "#{spec.version}" }
-  spec.source       = { :git => "git@github.com:MrDeveloperLiu/PirvateRepository.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:MrDeveloperLiu/PirvateRepository.git", :tag => spec.version.to_s }
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
