@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/MrDeveloperLiu/PirvateRepository"
   spec.license      = "MIT"
   spec.author       = { "刘杨" => "164182408@qq.com" }
-  spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => spec.version.to_s }
 
   spec.swift_versions = '5.0'
   
