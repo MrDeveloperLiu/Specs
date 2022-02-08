@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.description  = "CollectionUI工具"
 
   spec.homepage     = "https://github.com/MrDeveloperLiu/PirvateRepository"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = "MIT"
   spec.author       = { "刘杨" => "164182408@qq.com" }
   
   
