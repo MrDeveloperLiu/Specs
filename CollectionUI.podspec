@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "刘杨" => "164182408@qq.com" }
   
   
-  spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => spec.version }
+  spec.source       = { :git => "git@github.com:MrDeveloperLiu/PirvateRepository.git", :tag => spec.version }
 
   spec.swift_versions = ['5.0']
 
