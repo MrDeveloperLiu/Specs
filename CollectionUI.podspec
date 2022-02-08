@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CollectionUI"
-  spec.version      = "1.1.2"
+  spec.version      = "1.1.3"
   spec.summary      = "CollectionUI: That is some useful wedigt for UITableView and UICollectionView"
   spec.description  = <<-DESC
     Hello There~
@@ -23,7 +23,8 @@ Pod::Spec.new do |spec|
   spec.author             = { "刘杨" => "164182408@qq.com" }
   spec.platform     = :ios, "10.0"
   spec.swift_versions = ['5.0']
-  spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => "#{spec.version}" }
+  #spec.source       = { :git => "https://github.com/MrDeveloperLiu/PirvateRepository.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:MrDeveloperLiu/PirvateRepository.git", :tag => "#{spec.version}" }
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
