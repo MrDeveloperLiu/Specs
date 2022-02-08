@@ -17,6 +17,6 @@ Pod::Spec.new do |spec|
   # spec.tvos.deployment_target = "9.0"
 
   spec.requires_arc = true
-  spec.source_files = "CollectionUI/Classes/**/*.{h,m,swift,pch}"
+  spec.source_files = "CollectionUI/Classes/**/*.swift"
     
 end
